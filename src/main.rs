@@ -13,3 +13,12 @@ async fn main() -> Result<()> {
 
   Ok(())
 }
+/*#[tokio::main]
+async fn main() -> Result<()> {
+  env_logger::Builder::from_env(Env::default().default_filter_or("info")).init();
+
+  let mut pm = ProcessManager::new();
+  pm.start().await;
+
+  Ok(())
+}*/ 
